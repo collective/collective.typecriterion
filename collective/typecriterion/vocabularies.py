@@ -20,8 +20,9 @@ class TypeCriterionDefined(object):
         terms = []
         
         for conf in settings.type_criterion_defined:
+            type_name = conf.type_name.encode('utf-8')
             msgid = _(conf.type_name)
-            terms.append(SimpleTerm(conf.type_name, msgid))
+            terms.append(SimpleTerm(type_name, token=type_name, title=msgid))
         
         return SimpleVocabulary(terms)
 

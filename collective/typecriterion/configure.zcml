@@ -25,7 +25,7 @@
   <utility
       name="general_type"
       provides="plone.app.querystring.interfaces.IParsedQueryIndexModifier"
-      component=".index_modifier.GeneralTypeIndexModifier"
+      factory=".index_modifier.GeneralTypeIndexModifier"
       />
 
   <genericsetup:registerProfile

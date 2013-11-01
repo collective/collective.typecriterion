@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = '0.1.0'
 
 tests_require = ['plone.app.testing']
 
@@ -22,7 +22,7 @@ setup(name='collective.typecriterion',
       keywords='plone criterion collection type',
       author='keul',
       author_email='luca@keul.it',
-      url='http://plone.org/products/collective.typecriterion',
+      url='https://github.com/keul/collective.typecriterion',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['collective'],
