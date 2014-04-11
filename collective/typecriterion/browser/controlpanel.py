@@ -17,7 +17,7 @@ class TypeCriterionSettingsControlPanelEditForm(controlpanel.RegistryEditForm):
     """
     schema = ITypesCriterionSettings
     id = "TypeCriterionSettingsEditForm"
-    label = _(u"Type criterion configuration")
+    label = _(u"Type criterion settings")
     description = _(u"help_type_criterion_settings_editform",
                     default=u"Manage site configuration for types criterion.\n"
                             u"New types added here will be available when managing collections criteria.")

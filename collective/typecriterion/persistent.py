@@ -14,8 +14,8 @@ class IRowTypesCriterionSettings(Interface):
     """Single configuration entry for types criterion"""
     
     type_name = schema.TextLine(
-            title=_(u"Category type name"),
-            description=_(u"A descriptive name for the type of content you want to define"),
+            title=_(u"General type name"),
+            description=_(u"A descriptive name for the content type you want to define"),
             default=u"",
             missing_value=u"",
             required=True,

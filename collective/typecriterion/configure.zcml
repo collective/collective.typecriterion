@@ -6,6 +6,7 @@
     i18n_domain="collective.typecriterion">
 
   <five:registerPackage package="." initialize=".initialize" />
+  <i18n:registerTranslations directory="locales" />
 
   <include package="plone.app.registry" />
   <include package="plone.app.collection" />
@@ -33,6 +34,14 @@
       title="collective.typecriterion"
       directory="profiles/default"
       description="A new, more flexible, content type criterion for collections"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="collective.typecriterion uninstall"
+      directory="profiles/uninstall"
+      description="Uninstall collective.typecriterion"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
